@@ -35,6 +35,6 @@ fixed it all, now it says I submitted the wrong answer but it stills provide me 
 
 Think the first answer is not translated correctly because it does not give me the second challenge, should be fixable. It is adding spacing between the metals which is not how to answer is supposed to be shaped. I will need to make a new function that removes the spacing. I console.log the answer and it seems to be submitted correctly. I have no clue what is going wrong. Highly debating going to the version where I just submitted answers just so I can atleast deliver a working code. Sorry Simonsen, but I already did the challenge it is just that the stupid program has decided to not accept it anymore.
 
-Yea I do not care about my grade atp, will go back to the working version. Before I do that, will try and figure out why it is only asking me to solve the second challenge.
+Yea I do not care about my grade atp, will go back to the working version. Before I do that, will try and figure out why it is only asking me to solve the second challenge. Feel like it is a server issue, will not grieve my grade haha.
 
 Third challenge, 
