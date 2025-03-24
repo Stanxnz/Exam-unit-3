@@ -35,6 +35,17 @@ fixed it all, now it says I submitted the wrong answer but it stills provide me 
 
 Think the first answer is not translated correctly because it does not give me the second challenge, should be fixable. It is adding spacing between the metals which is not how to answer is supposed to be shaped. I will need to make a new function that removes the spacing. I console.log the answer and it seems to be submitted correctly. I have no clue what is going wrong. Highly debating going to the version where I just submitted answers just so I can atleast deliver a working code. Sorry Simonsen, but I already did the challenge it is just that the stupid program has decided to not accept it anymore.
 
-Yea I do not care about my grade atp, will go back to the working version. Before I do that, will try and figure out why it is only asking me to solve the second challenge. Feel like it is a server issue, will not grieve my grade haha.
+Yea I do not care about my grade atp, will go back to the working version. Before I do that, will try and figure out why it is only asking me to solve the second challenge. Feel like it is a server issue, will not grief my grade haha.
 
-Third challenge, 
+Third challenge, This is a transcript of the note.\n' +
+    '\n' +
+    '\n' +
+    '17 20   20 29 17 24 4 34   24 127 127 1 8 8   17 20   17 10 1   34 1 46 17   48 24 45 12 17 ,   4 34 9 45 17   17 10 1   2 20 23 38 45 12 24   2 20 23   17 10 1   2 20 45 23 17 10   1 12 1 38 1 34 17 ;   127 20 38 29 4 34 1   38 1 23 127 45 23 108 ,   127 20 9 9 1 23   24 34 131   8 45 12 2 45 23   20 48 1 23   10 1 24 17 ,   24 131 131   8 24 12 17   24 34 131   270 24 17 1 23 ,   4 34 2 45 8 1   5 20 12 131   17 10 23 20 45 5 10   24 4 23 '
+I will try normal task solving, every number has to stand for a letter so I will keep making guesses for which number is which letter until something clicks. Been googling a lot but nothing seems plausble, will continue to try on my own with a frequency test or something.
+Started with guessing 17 = t and 20 = o, because to seams like a normal way to start a challenge sentence. Then slowly but surely uncovered the sentence: to obtain access to the next vault, input the formula for the fourth element. Now I need to make code do this challenge though...
+Will start by translating all number and then converting the sentence.
+I finetuned my code to uncover the full message: TO OBTAIN ACCESS TO THE NEXT VAULT INPUT THE FORMULA FOR THE FOURTH ELEMENT COMBINE MERCURY COPPER AND SULFUR OVER HEAT ADD SALT AND WATER INFUSE GOLD THROUGH AIR.
+Now I need to google what this procus does.
+https://en.wikipedia.org/wiki/Philosopher%27s_stone
+Will try philosphers stone as answer as this seems to be what the sentence is refering to.
+Forget that there is no way to know wether I got the right answer because the server is still down...
