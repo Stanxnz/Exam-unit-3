@@ -16,7 +16,6 @@ https://dictionary.cambridge.org/dictionary/english/eldritch#google_vignette
 'eldritch' means strange and frightening.
 https://dictionary.cambridge.org/dictionary/english/rime
 'rime' refers to frost from low air temperature. Like a layer of white on grass after a cold night.
-
 So uptil now I have icy flow of forgetfullness beneath a strange/frightening layer of frost. This could refer to a frozen river.
 I know metals are considered frozen in alchemy. River could then refer to a melted state. No clue what strange/frightening has to do with it tho.
 https://www.onlinemetals.com/en/melting-points
