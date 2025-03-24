@@ -146,5 +146,4 @@ await submitAnswer(answer2);
 const answerToCode = decodeMessage(codeForChallenge3);
 console.log("Decrypted message:", answerToCode)
 const answer3 = getFourthElement();
-await submitAnswer(answer3);
 console.log(answer3);
