@@ -26,6 +26,15 @@ https://www.wikihow.com/Use-Constrained-Writing-to-Send-a-Secret-Message
 This seems to be a valid way to show a secret message, which it indeed is. The sentence spells S_I_L_V_E_R!!
 Ok for some reason submitting silver does not work, although I feel like this has to be the answer. I will try different names.
 I just realised I might be submitting my answers wrong, let me fix that.
-Yes this was indeed the problem, becaus I started with using the same coding as last time I ended up having a lot of code that was not needed becaus I have a better answer submission code then last time.
+Yes this was indeed the problem, because I started with using the same coding as last time I ended up having a lot of code that was not needed because I have a better answer submission code then last time.
+
+Just realised I need to solve the challenges using code instead of using my human brain that did it without all the hassle...
+Time for braindead coding!
+
+fixed it all, now it says I submitted the wrong answer but it stills provide me with the next challenge as if I presented the correct answer. No clue why this would happen but I guess it means I can still just go to the next challenge.
+
+Think the first answer is not translated correctly because it does not give me the second challenge, should be fixable. It is adding spacing between the metals which is not how to answer is supposed to be shaped. I will need to make a new function that removes the spacing. I console.log the answer and it seems to be submitted correctly. I have no clue what is going wrong. Highly debating going to the version where I just submitted answers just so I can atleast deliver a working code. Sorry Simonsen, but I already did the challenge it is just that the stupid program has decided to not accept it anymore.
+
+Yea I do not care about my grade atp, will go back to the working version. Before I do that, will try and figure out why it is only asking me to solve the second challenge.
 
 Third challenge, 
