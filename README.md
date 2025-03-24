@@ -49,3 +49,9 @@ Now I need to google what this procus does.
 https://en.wikipedia.org/wiki/Philosopher%27s_stone
 Will try philosphers stone as answer as this seems to be what the sentence is refering to.
 Forget that there is no way to know wether I got the right answer because the server is still down...
+Sorry Simonsen, but I asked a classmate to see wether philosophers stone was correct because I want to be sure before I go to bed. Turn out I was not correct and should focus on the sentence itself.
+The sentence lists a lot of elements, so maybe it is the same as task 1 and I just need to translate them. 
+https://en.wikipedia.org/wiki/Alchemical_symbol
+first attemp did not work, but after some serieus thought figured heat might refer to fire which has a symbol too. Then somehow the server gave me task 4 eventhough it still bugs all other answers haha.
+
+Fourth challenge, 

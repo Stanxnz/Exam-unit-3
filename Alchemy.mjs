@@ -96,6 +96,21 @@ function translateNumberToLetter(code) {
     [24, 4, 23]
   ];
 
+function getFourthElement(){
+  const translateElements = {
+    mercury: "☿",
+    copper: "♀",
+    sulfur: "🜍",
+    fire: "🜂",
+    salt: "🜔",
+    water: "🜄",
+    gold: "☉",
+    air: "🜁"
+  }
+  const fourthElement = translateElements.mercury + translateElements.copper + translateElements.sulfur + translateElements.fire + translateElements.salt + translateElements.water + translateElements.gold + translateElements.air;
+  return fourthElement;
+}
+
 (async function() {
     const startUrl = `${ALCHEMY_API}start?player=${encodeURIComponent(PLAYER_NAME)}`;
     const startResponse = await fetch(startUrl);
@@ -130,5 +145,6 @@ await submitAnswer(answer2);
 
 const answerToCode = decodeMessage(codeForChallenge3);
 console.log("Decrypted message:", answerToCode)
-const answer3 = ["PHILOSOPHER'S STONE"]
+const answer3 = getFourthElement();
+await submitAnswer(answer3);
 console.log(answer3);
