@@ -27,11 +27,6 @@ async function submitAnswer(answer) {
 }
 
 const answer = ["Gold", "Quicksilver", "Silver", "Iron", "Gold"];
-
-const answerResponse = await fetch(`${ALCHEMY_API}answer`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ answer, player: PLAYER_NAME })
-  });
-  const answerResult = await answerResponse.json();
-  console.log("Submission result:", answerResult);
+await submitAnswer(answer);
+const answer2 = ["SILVER"];
+await submitAnswer(answer2);
