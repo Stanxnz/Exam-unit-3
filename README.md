@@ -96,3 +96,22 @@ remove all the random capitals at the end of the story and got the following: HO
 Made a translation table with the new alphabet, let's see if we are on the right track. Decoded random capitals: GOLD COPPER GOLD GOLD SILVER EARTH MERCURY COPPER FIRE AIR FIRE EARTH LEAD EARTH SILVER IRON GOLD SILVER WATER GOLD COPPER FIRE GOLD IRON LEAD EARTH COPPER COPPER TIN MERCURY.
 Let's gooo finally progress!
 Translated all words to symbols, which seems logical but was not the correct answer to the task.
+Going to compare my symbols to the ones in the 30x30 grid and present the coordinates as an answer since I heard that is how you get to the answer, would have never gotten to that idea myself haha. Coordinates output: [
+  { row: 1, col: 1 },  { row: 1, col: 2 },
+  { row: 1, col: 1 },  { row: 1, col: 1 },
+  { row: 1, col: 5 },  { row: 1, col: 6 },
+  { row: 1, col: 7 },  { row: 1, col: 2 },
+  { row: 1, col: 9 },  { row: 1, col: 10 },
+  { row: 1, col: 9 },  { row: 1, col: 6 },
+  { row: 1, col: 13 }, { row: 1, col: 6 },
+  { row: 1, col: 5 },  { row: 1, col: 16 },
+  { row: 1, col: 1 },  { row: 1, col: 5 },
+  { row: 1, col: 19 }, { row: 1, col: 1 },
+  { row: 1, col: 2 },  { row: 1, col: 9 },
+  { row: 1, col: 1 },  { row: 1, col: 16 },
+  { row: 1, col: 13 }, { row: 1, col: 6 },
+  { row: 1, col: 2 },  { row: 1, col: 2 },
+  { row: 1, col: 29 }, { row: 1, col: 7 }
+]
+This is once again not the answer...
+I removed duplicated coordinates, then looked at the symbols they represented. This ultimately got me to try ARGON as an answer, which worked first try. Don't ask me how I got to it because my own thoughts dont even make sense anymore after a day straight of coding, but it worked!
