@@ -93,3 +93,5 @@ I feel like I will have to translate all the symbols in the grid again (assuming
 Just noticed the weirdly placed capital letters in the challenge, maybe I should arrange those first.
 Extracted all capitals: HOPSUMDTLKWIBCNYERGJQXVZFADPDDGUBPMHMUIUGLDGVDPMDLIUPPJB, does not seem to be very usefull.
 remove all the random capitals at the end of the story and got the following: HOPSUMDTLKWIBCNYERGJQXVZFA. This also does not spell a word but it has 26 characters just as the alphabet has so Let's try alphabet as answer. Ooh maybe all those stand for a letter in alphabet and I need to decypher the random capitals at the end of the story with that.
+Made a translation table with the new alphabet, let's see if we are on the right track. Decoded random capitals: GOLD COPPER GOLD GOLD SILVER EARTH MERCURY COPPER FIRE AIR FIRE EARTH LEAD EARTH SILVER IRON GOLD SILVER WATER GOLD COPPER FIRE GOLD IRON LEAD EARTH COPPER COPPER TIN MERCURY.
+Let's gooo finally progress!

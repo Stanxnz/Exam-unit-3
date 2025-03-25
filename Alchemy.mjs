@@ -111,47 +111,6 @@ function getFourthElement(){
   return fourthElement;
 }
 
-function decodeChallenge4(){
-  return ["ALPHABET"]
-}
-
-(async function() {
-    const startUrl = `${ALCHEMY_API}start?player=${encodeURIComponent(PLAYER_NAME)}`;
-    const startResponse = await fetch(startUrl);
-    const startData = await startResponse.json();
-    console.log("Challenge started:", startData);
-})();
-
-async function submitAnswer(answer) {
-    const answerData = {
-        player: PLAYER_NAME,
-        answer: answer
-    };
-    const response = await fetch(`${ALCHEMY_API}answer`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(answerData)
-    });
-    const result = await response.json();
-    console.log("Answer response:", result);
-}
-
-const symbols = "☉☿☽♂☉";
-const metals = translatePlanetarySymbols(symbols);
-const answer1 = formatMetalsList(metals);
-await submitAnswer(answer1); 
-
-const poem = "Still flows the Icy Lethe, Veiling all 'neath Eldritch Rime.";
-const answer2 = extractCapitalLetters(poem);
-await submitAnswer(answer2);
-
-const answerToCode = decodeMessage(codeForChallenge3);
-console.log("Decrypted message:", answerToCode)
-const answer3 = getFourthElement();
-await submitAnswer(answer3);
-
 const challenge4Story = `
 through Hidden experiments, the Observing Philosophers 
 carefully recorded their findings in secret tomes. 
@@ -198,6 +157,72 @@ keys to transformation. only those who
 fully commit to the pursuit of enlightenment 
 can grasp the final mysteries.
 `;
+
+const challenge4Alphabet = "HOPSUMDTLKWIBCNYERGJQXVZFA";
+const normalAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const alphabetTranslation = {};
+for (let i = 0; i < challenge4Alphabet.length; i++) {
+  alphabetTranslation[challenge4Alphabet[i]] = normalAlphabet[i];
+}
+const randomCapitals = 
+`DNIS PNYYUR DNIS DNIS GLIXUR 
+UHRJT BURPQRF PNYYUR MLRU HLR 
+MLRU UHRJT IUHS UHRJT GLIXUR
+LRNC DNIS GLIXUR VHJUR DNIS
+PNYYUR MLRU DNIS LRNC IUHS
+UHRJT PNYYUR PNYYUR JLC BURPQRF`;
+
+function decodeRandomCapitals(cipherText, invMap) {
+  return cipherText.split(/\s+/).map(word => {
+    return word.split('').map(letter => invMap[letter] || letter).join('');
+  }).join(' ');
+}
+
+const decodedText = decodeRandomCapitals(randomCapitals, alphabetTranslation);
+console.log("Decoded random capitals:", decodedText);
+
+function decodeChallenge4(){
+  return ["ALPHABET"]
+}
+
+(async function() {
+    const startUrl = `${ALCHEMY_API}start?player=${encodeURIComponent(PLAYER_NAME)}`;
+    const startResponse = await fetch(startUrl);
+    const startData = await startResponse.json();
+    console.log("Challenge started:", startData);
+})();
+
+async function submitAnswer(answer) {
+    const answerData = {
+        player: PLAYER_NAME,
+        answer: answer
+    };
+    const response = await fetch(`${ALCHEMY_API}answer`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(answerData)
+    });
+    const result = await response.json();
+    console.log("Answer response:", result);
+}
+
+const symbols = "☉☿☽♂☉";
+const metals = translatePlanetarySymbols(symbols);
+const answer1 = formatMetalsList(metals);
+await submitAnswer(answer1); 
+
+const poem = "Still flows the Icy Lethe, Veiling all 'neath Eldritch Rime.";
+const answer2 = extractCapitalLetters(poem);
+await submitAnswer(answer2);
+
+const answerToCode = decodeMessage(codeForChallenge3);
+console.log("Decrypted message:", answerToCode)
+const answer3 = getFourthElement();
+await submitAnswer(answer3);
+
+
 const capitalsFromChallenge4Story = extractCapitalLetters(challenge4Story);
 console.log(capitalsFromChallenge4Story);
 const answer4 = decodeChallenge4();
