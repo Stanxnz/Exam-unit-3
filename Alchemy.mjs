@@ -157,6 +157,7 @@ keys to transformation. only those who
 fully commit to the pursuit of enlightenment 
 can grasp the final mysteries.
 `;
+const capitalsFromChallenge4Story = extractCapitalLetters(challenge4Story);
 
 const challenge4Alphabet = "HOPSUMDTLKWIBCNYERGJQXVZFA";
 const normalAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -181,9 +182,26 @@ function decodeRandomCapitals(cipherText, invMap) {
 const decodedText = decodeRandomCapitals(randomCapitals, alphabetTranslation);
 console.log("Decoded random capitals:", decodedText);
 
-function decodeChallenge4(){
-  return ["ALPHABET"]
+const decodedTextAsString = "GOLD COPPER GOLD GOLD SILVER EARTH MERCURY COPPER FIRE AIR FIRE EARTH LEAD EARTH SILVER IRON GOLD SILVER WATER GOLD COPPER FIRE GOLD IRON LEAD EARTH COPPER COPPER TIN MERCURY";
+
+function mapElementsToSymbols(decodedString) {
+  const elementTranslation4 = {
+    "GOLD": "☉",
+    "COPPER": "♀",
+    "SILVER": "☽",
+    "EARTH": "🜃",
+    "MERCURY": "☿",
+    "FIRE": "🜂",
+    "AIR": "🜁",
+    "LEAD": "♄",
+    "IRON": "♂",
+    "WATER": "🜄",
+    "TIN": "♃"
+  };
+  return decodedString.split(/\s+/).map(word => elementTranslation4[word] || word).join(' ');
 }
+
+const finalSymbols = mapElementsToSymbols(decodedTextAsString);
 
 (async function() {
     const startUrl = `${ALCHEMY_API}start?player=${encodeURIComponent(PLAYER_NAME)}`;
@@ -222,8 +240,6 @@ console.log("Decrypted message:", answerToCode)
 const answer3 = getFourthElement();
 await submitAnswer(answer3);
 
-
-const capitalsFromChallenge4Story = extractCapitalLetters(challenge4Story);
-console.log(capitalsFromChallenge4Story);
-const answer4 = decodeChallenge4();
+const answer4 = finalSymbols;
 await submitAnswer(answer4);
+console.log(answer4);
